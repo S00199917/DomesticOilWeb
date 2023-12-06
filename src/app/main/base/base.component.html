@@ -1,0 +1,16 @@
+<div class="container">
+    <div id="deviceList">
+        <span class="material-symbols-outlined">
+            check_circle
+            </span>
+        <div *ngFor="let device of testDevices" class="device">
+            <h5>{{device.name}}</h5>
+            <p><span class="material-symbols-outlined">
+                battery_full_alt
+                </span>{{device.battery}}%</p>
+            {{device.name}}
+            {{device.battery}}%
+            {{device.level}}%
+        </div>
+    </div>
+</div>
